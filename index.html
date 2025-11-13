@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+    </header>
+
+    <main class="main-container-home">
+      <div class="text-home">
+        <h1 class="heading-home">Hi, I am Yevheniia Lohina :)</h1>
+        <section>
+          <h2>Why I chose design</h2>
+          <p class="description-home">
+            I moved into design after years in marketing because I wanted to
+            create not just campaigns, but experiences that really help people.
+            Design lets me combine strategy, empathy, and aesthetics — and see
+            real impact in what I do.
+          </p>
+        </section>
+
+        <section>
+          <h2>What inspires me</h2>
+          <p class="description-home">
+            I’m inspired by human stories, meaningful visuals, and small details
+            that make daily life easier or more beautiful. I love when design
+            feels honest, emotional, and thoughtful.
+          </p>
+        </section>
+
+        <section>
+          <h2>My goals</h2>
+          <p class="description-home">
+            I want to grow as a UX/UI designer and keep learning every day —
+            from users, colleagues, and real projects.
+          </p>
+          <p class="description-home">My main goals are:</p>
+          <ul class="description-home">
+            <li>
+              to build digital products that feel intuitive, emotional, and
+              inclusive;
+            </li>
+            <li>
+              to work on meaningful projects that help people adapt, learn, or
+              feel connected;
+            </li>
+            <li>
+              to refine my design process — from research to prototypes — and
+              become stronger in both UX and visual design;
+            </li>
+            <li>
+              to join a creative team that values empathy, curiosity, and
+              collaboration.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="image-home">
+        <img
+          src="/images/ui-ux-representations-with-smartphone_23-2150201861.jpg"
+          alt=""
+        />
+      </div>
+      <img class="img-blur" src="/images/Vector teal.png" alt="blur" />
+    </main>
+
+    <footer>© <span id="year"></span> Yevheniia Lohina</footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

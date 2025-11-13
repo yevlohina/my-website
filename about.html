@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — About</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active" aria-current="page">About</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+    </header>
+
+    <main class="main-container-about">
+      <h1>About me</h1>
+
+      <div class="about">
+        <img src="./images/my photo.PNG" alt="Your portrait" />
+        <div class="ttl-dscrpt-btn">
+          <div class="ttl-dscrpt">
+            <h2>Junior UI/UX Designer with a background in marketing</h2>
+            <p class="description">
+              I love translating complex information into clear, intuitive
+              interfaces. Thanks to my experience in marketing, I understand
+              both users and business goals and combine analytical thinking with
+              visual design in Figma. Open to junior positions, working student
+              positions, or internships in the field of UI/UX.
+            </p>
+          </div>
+          <button class="btn">Contact with me</button>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <h2 class="heading-about">Skills</h2>
+        <table aria-label="Skills and proficiency">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Figma</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>Photoshop</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a class="back" href="index.html">← Back to Home</a>
+    </main>
+
+    <footer>© <span id="year"></span> Yevheniia Lohina</footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

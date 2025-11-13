@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Contacts</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html" class="active" aria-current="page">Contacts</a>
+      </nav>
+    </header>
+
+    <main class="all-main-container">
+      <h1>Contact</h1>
+      <ul>
+        <li class="text-contact">
+          Phone:
+          <a class="link-color" href="tel:+491234567890">+49 170 347 1407</a>
+        </li>
+        <li class="text-contact">
+          Email:
+          <a class="link-color" href="mailto:youremail@example.com"
+            >yev.lohina@gmail.com</a
+          >
+        </li>
+        <li class="text-contact">
+          Portfolio:
+          <a
+            class="link-color"
+            href="https://your-portfolio.example"
+            target="_blank"
+            rel="noopener noreferrer"
+            >your-portfolio.example</a
+          >
+        </li>
+        <li class="text-contact">
+          LinkedIn:
+          <a
+            class="link-color"
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin.com/in/yevheniialohina</a
+          >
+        </li>
+        <li class="text-contact">
+          Behance:
+          <a
+            class="link-color"
+            href="https://behance.net/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            >behance.net/yourprofile</a
+          >
+        </li>
+      </ul>
+      <a class="back" href="index.html">← Back to Home</a>
+    </main>
+
+    <footer>© <span id="year"></span> Yevheniia Lohina</footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
