@@ -22,28 +22,31 @@
           Leave your contact details and message. I will respond as soon as
           possible.
         </p>
-        <form id="contact-form">
-          <label>
+        <form class="form" id="contact-form">
+          <label class="form-label">
             <span>Name</span>
             <input
+              class="form-input"
               type="text"
               name="name"
               placeholder="Enter your name"
               required
             />
           </label>
-          <label>
+          <label class="form-label">
             <span>Email</span>
             <input
+              class="form-input"
               type="email"
               name="email"
               placeholder="example@mail.com"
               required
             />
           </label>
-          <label>
+          <label class="form-label">
             <span>Message</span>
             <textarea
+              class="form-input"
               name="message"
               rows="5"
               placeholder="What are you interested in?"
@@ -51,7 +54,7 @@
             ></textarea>
           </label>
           <div>
-            <button type="submit">Send</button>
+            <button class="btn" type="submit">Send</button>
             <span id="status"></span>
           </div>
         </form>

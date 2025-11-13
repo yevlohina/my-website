@@ -55,7 +55,7 @@ form.addEventListener("submit", async (event) => {
     }).format(new Date())}`,
   ].join("\n");
 
-  renderStatus("Надсилаємо...", "");
+  renderStatus("Sending...", "");
 
   try {
     const response = await fetch(apiUrl, {
@@ -75,10 +75,10 @@ form.addEventListener("submit", async (event) => {
       throw new Error(errorData.description || "Произошла ошибка Telegram API");
     }
 
-    renderStatus("Повідомлення надіслано ✅", "success");
+    renderStatus("Message sent ✅", "success");
     form.reset();
   } catch (error) {
     console.error(error);
-    renderStatus(`Не вдалося надіслати: ${error.message}`, "error");
+    renderStatus(`Failed to send: ${error.message}`, "error");
   }
 });
