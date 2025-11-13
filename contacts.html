@@ -16,7 +16,47 @@
     </header>
 
     <main class="all-main-container">
-      <h1>Contact</h1>
+      <h1>Contact me</h1>
+      <section>
+        <p>
+          Leave your contact details and message. I will respond as soon as
+          possible.
+        </p>
+        <form id="contact-form">
+          <label>
+            <span>Name</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label>
+            <span>Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+              required
+            />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="What are you interested in?"
+              required
+            ></textarea>
+          </label>
+          <div>
+            <button type="submit">Send</button>
+            <span id="status"></span>
+          </div>
+        </form>
+      </section>
+
       <ul>
         <li class="text-contact">
           Phone:
@@ -64,7 +104,7 @@
 
     <footer>© <span id="year"></span> Yevheniia Lohina</footer>
 
-    <script>
+    <script src="script.js">
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
